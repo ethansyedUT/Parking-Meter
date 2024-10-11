@@ -19,62 +19,46 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
 module input_handler(
-    input clk, btnU, btnR, btnL, btnD,
-    input [1:0] sw,
-    output reg [3:0] led
-    );
-    
-    localparam ms50 = 500_000_000;
-    reg [18:0] reloadU = ms50;
-    reg [18:0] reloadR = ms50;
-    reg [18:0] reloadL = ms50;
-    reg [18:0] reloadD = ms50;
-    
-    initial begin
-        led = 4'b1111;
+    input wire clk, btnU, btnR, btnL, btnD,
+    input wire [1:0] sw,
+    output wire dbtnU, dbtnR, dbtnL, dbtnD,
+    output reg [1:0] dsw
+);
+    // Debounce instances for each button
+    debounce u_debounce_U(btnU, clk, dbtnU);
+    debounce u_debounce_R(btnR, clk, dbtnR);
+    debounce u_debounce_L(btnL, clk, dbtnL);
+    debounce u_debounce_D(btnD, clk, dbtnD);
+
+    // Switch handling
+    always @(posedge clk) begin
+        dsw <= sw;
     end
-    
-    always@(posedge clk)begin
-        if(sw[0] == 1)begin
-            reloadU <= ms50;
-            reloadR <= ms50;
-            reloadL <= ms50;
-            reloadD <= ms50;
-            led = 4'b1111;
-        end
-        else if (sw[1] == 1)begin
-            reloadU <= ms50;
-            reloadR <= ms50;
-            reloadL <= ms50;
-            reloadD <= ms50;
-            led = 4'b1111;
-        end else begin
-            if(btnU && reloadU == 0)begin
-                led[0] = 0;
-                reloadU <= ms50;
-            end else
-                reloadU = (reloadU == 0) ? 0 : reloadU - 1;
-            if(btnL && reloadL == 0)begin
-                led[1] = 0;
-                reloadL = ms50;
-            end else         
-                reloadL = (reloadL == 0) ? 0 : reloadL - 1;
-            if(btnR && reloadR == 0)begin
-                led[2] = 0;
-                reloadR <= ms50;
-            end else
-                reloadR = (reloadR == 0) ? 0 : reloadR - 1;
-            if(btnD && reloadD == 0)begin
-                led[3] = 0;
-                reloadD <= ms50;
-            end else
-                reloadD = (reloadD == 0) ? 0 : reloadD - 1;
-            
-            
-        end
-    
+
+endmodule
+
+// Debounce module
+module debounce(
+    input wire pb_1, clk,
+    output wire pb_out
+);
+    wire Q1, Q2, Q2_bar, Q0;
+
+    my_dff d0(clk, pb_1, Q0);
+    my_dff d1(clk, Q0, Q1);
+    my_dff d2(clk, Q1, Q2);
+
+    assign Q2_bar = ~Q2;
+    assign pb_out = Q1 & Q2_bar;
+endmodule
+
+// D-flip-flop for debouncing module 
+module my_dff(
+    input wire DFF_CLOCK, D,
+    output reg Q
+);
+    always @(posedge DFF_CLOCK) begin
+        Q <= D;
     end
-    
 endmodule

@@ -1,87 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1728495384">
-  <File Type="ROUTE-PWR" Name="input_handler_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="input_handler.tcl"/>
-  <File Type="BITSTR-MMI" Name="input_handler.mmi"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="input_handler_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="input_handler_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="input_handler_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="input_handler_reports.tcl"/>
-  <File Type="OPT-TIMING" Name="input_handler_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="input_handler_opt.dcp"/>
-  <File Type="OPT-DRC" Name="input_handler_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="input_handler.hwdef"/>
-  <File Type="PWROPT-DCP" Name="input_handler_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="input_handler_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="input_handler_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="input_handler_placed.dcp"/>
-  <File Type="PLACE-IO" Name="input_handler_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="input_handler_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="input_handler_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="input_handler_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="input_handler_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="input_handler_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="input_handler_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BIN" Name="input_handler.bin"/>
-  <File Type="PLACE-TIMING" Name="input_handler_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="input_handler_postplace_pwropt.dcp"/>
-  <File Type="BITSTR-MSK" Name="input_handler.msk"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="input_handler_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="input_handler_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="input_handler_drc_physopted.rpt"/>
-  <File Type="BITSTR-RBT" Name="input_handler.rbt"/>
-  <File Type="PHYSOPT-TIMING" Name="input_handler_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="input_handler_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="input_handler_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="input_handler_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="input_handler_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="input_handler_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="input_handler_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="input_handler_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="input_handler_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="input_handler_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="input_handler_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="input_handler_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="input_handler_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="input_handler_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="input_handler_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="input_handler_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="input_handler_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="input_handler_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="input_handler_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="input_handler_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="input_handler_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="input_handler_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="input_handler_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="input_handler_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="input_handler_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="input_handler_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="input_handler_bus_skew_postroute_physopted.rpt"/>
-  <File Type="BG-BIT" Name="input_handler.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="input_handler_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="input_handler_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-NKY" Name="input_handler.nky"/>
-  <File Type="BITSTR-BMM" Name="input_handler_bd.bmm"/>
-  <File Type="PDI-FILE" Name="input_handler.pdi"/>
-  <File Type="RCFI_FILE" Name="input_handler.rcfi"/>
-  <File Type="CFI_FILE" Name="input_handler.cfi"/>
-  <File Type="RNPI_FILE" Name="input_handler.rnpi"/>
-  <File Type="NPI_FILE" Name="input_handler.npi"/>
-  <File Type="RBD_FILE" Name="input_handler.rbd"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1728616408">
+  <File Type="ROUTE-PWR" Name="system_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="system.tcl"/>
+  <File Type="BITSTR-MMI" Name="system.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="system_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="system_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="system_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="system_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="system_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="system_opt.dcp"/>
+  <File Type="OPT-DRC" Name="system_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="system.hwdef"/>
+  <File Type="PWROPT-DCP" Name="system_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="system_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="system_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="system_placed.dcp"/>
+  <File Type="PLACE-IO" Name="system_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="system_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="system_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="system_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="system_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="system_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="system_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="system.bin"/>
+  <File Type="PLACE-TIMING" Name="system_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="system_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="system.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="system_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="system_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="system_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="system.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="system_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="system_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="system_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="system_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="system_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="system_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="system_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="system_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="system_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="system_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="system_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="system_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="system_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="system_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="system_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="system_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="system_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="system_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="system_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="system_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="system_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="system_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="system_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="system_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="system_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="system_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="system_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="system.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="system_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="system_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="system.nky"/>
+  <File Type="BITSTR-BMM" Name="system_bd.bmm"/>
+  <File Type="PDI-FILE" Name="system.pdi"/>
+  <File Type="RCFI_FILE" Name="system.rcfi"/>
+  <File Type="CFI_FILE" Name="system.cfi"/>
+  <File Type="RNPI_FILE" Name="system.rnpi"/>
+  <File Type="NPI_FILE" Name="system.npi"/>
+  <File Type="RBD_FILE" Name="system.rbd"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="input_handler.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="input_handler.sysdef"/>
-  <File Type="BG-BGN" Name="input_handler.bgn"/>
-  <File Type="BG-DRC" Name="input_handler.drc"/>
-  <File Type="RDI-RDI" Name="input_handler.vdi"/>
+  <File Type="BITSTR-LTX" Name="system.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="system.sysdef"/>
+  <File Type="BG-BGN" Name="system.bgn"/>
+  <File Type="BG-DRC" Name="system.drc"/>
+  <File Type="RDI-RDI" Name="system.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="ROUTE-RQS" Name="input_handler_routed.rqs"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS" Name="input_handler_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="system_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="system_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/input_handler.v">
+    <File Path="$PSRCDIR/sources_1/new/Binary_to_BCD.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Display_Controller.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -90,7 +97,20 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/controller.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/half_sec_gen.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/input_handler.v">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -98,7 +118,13 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/output_handler.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/system.v">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -106,7 +132,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="input_handler"/>
+      <Option Name="TopModule" Val="system"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
